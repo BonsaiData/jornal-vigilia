@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Vigília - Aplicando Conhecimento, Aula 8</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="saudacao.js"></script>
+</head>
+<body onload="saudacao()">
+
+  <div class="pagina">
+    <header>
+      <p class="orelha">Edição da madrugada</p>
+      <h1>A Vigília</h1>
+      <p class="orelha">Fundamentos de Web · Aula 8</p>
+    </header>
+
+    <p class="faixa">São Paulo · Ano I · Nº 8</p>
+
+    <main>
+      <article>
+        <p class="editoria">Especial</p>
+        <h2>Ar pesado e nuvens cinzas, a eterna tendência</h2>
+        <p class="subtitulo">Parece que está buscando uma ideia de exercício, não é?</p>
+
+        <figure>
+          <img src="cidadeNoir.jpg" alt="Prédios escuros à noite, com uma única janela acesa">
+          <figcaption>A única janela acesa do prédio.</figcaption>
+        </figure>
+
+        <div class="colunas">
+          <p class="primeiro">Esta página usa um evento do JavaScript. Quando o navegador termina de carregar tudo, o evento onload chama a função saudacao(), que abre uma caixa de diálogo com os dados do aluno.</p>
+          <p>A função pega a hora do computador e escolhe entre Bom Dia!, Boa Tarde! ou Boa Noite!. Também descobre o dia da semana e escreve na última linha, por exemplo: Hoje é sexta-feira.</p>
+          <p>Cada informação fica em uma linha da caixa. Para quebrar a linha dentro do alert() foi usado o \n no meio do texto.</p>
+        </div>
+      </article>
+
+      <aside>
+        <section>
+          <h3>Como funciona</h3>
+          <ol>
+            <li>O navegador lê o HTML e monta o DOM.</li>
+            <li>Estilos e imagens terminam de carregar.</li>
+            <li>A janela dispara o evento onload.</li>
+            <li>A função saudacao() abre o alert().</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>Horários</h3>
+          <table>
+            <tr><th>Saudação</th><th>Horário</th></tr>
+            <tr><td>Bom Dia!</td><td>05h às 11h59</td></tr>
+            <tr><td>Boa Tarde!</td><td>12h às 17h59</td></tr>
+            <tr><td>Boa Noite!</td><td>18h às 04h59</td></tr>
+          </table>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  <footer>
+    <p>Atividade Aplicando Conhecimento · Aula 8 · Fundamentos de Web</p>
+    <p>A Vigília é um jornal inventado só para este exercício.</p>
+  </footer>
+
+</body>
+</html>

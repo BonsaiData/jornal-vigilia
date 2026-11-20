@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  background: #dcdbd0;
+  color: #161a17;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.pagina {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 15px 0 12px;
+  border-top: 5px solid #161a17;
+  border-bottom: 1px solid #161a17;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Bookman Old Style", Georgia, serif;
+  font-size: 80px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.orelha {
+  margin: 0;
+  padding: 6px 10px;
+  border: 1px solid #161a17;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.faixa {
+  margin: 0 0 25px;
+  padding: 6px 0;
+  border-bottom: 3px solid #161a17;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+}
+
+article {
+  padding-right: 25px;
+  border-right: 1px solid #161a17;
+}
+
+.editoria {
+  margin: 0;
+  color: #2b4a6f;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 8px 0;
+  font-family: "Bookman Old Style", Georgia, serif;
+  font-size: 48px;
+  line-height: 1.05;
+}
+
+.subtitulo {
+  margin: 0 0 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #161a17;
+  font-size: 20px;
+  font-style: italic;
+}
+
+figure {
+  margin: 0 0 20px;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+}
+
+figcaption {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid #161a17;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 14px;
+}
+
+.colunas {
+  column-count: 2;
+  column-gap: 25px;
+  column-rule: 1px solid #161a17;
+  text-align: justify;
+}
+
+.colunas p {
+  margin: 0 0 14px;
+}
+
+.primeiro::first-letter {
+  float: left;
+  padding-right: 6px;
+  font-family: "Bookman Old Style", Georgia, serif;
+  font-size: 58px;
+  line-height: 0.8;
+  font-weight: bold;
+}
+aside section {
+  margin-bottom: 25px;
+  padding: 15px;
+  border: 2px solid #161a17;
+}
+
+h3 {
+  margin: 0 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 3px double #161a17;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 6px 8px 6px 0;
+  border-top: 1px solid #161a17;
+  text-align: left;
+}
+footer {
+  margin-top: 35px;
+  padding: 30px 20px;
+  background: #161a17;
+  color: #f3f0e4;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+footer p {
+  margin: 4px 0;
+}
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  article {
+    padding-right: 0;
+    border-right: none;
+  }
+
+  .colunas {
+    column-count: 1;
+  }
+}
